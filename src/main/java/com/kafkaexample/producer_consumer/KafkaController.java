@@ -4,7 +4,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/Kafka")
+@RequestMapping("/api/kafka")
 public class KafkaController {
     private KafkaTemplate<String, MessageModel> KafkaTemplate;
 

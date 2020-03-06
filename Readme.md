@@ -1,7 +1,9 @@
-# <img src="src/docs/asciidoc/images/spring-framework.png" width="80" height="80"> Spring Framework [![Build Status](https://build.spring.io/plugins/servlet/wittified/build-status/SPR-PUBM)](https://build.spring.io/browse/SPR)
+# Java Spring & Apache Kafka
 
-This is the home of the Spring Framework: the foundation for all [Spring projects](https://spring.io/projects). Collectively the Spring Framework and the family of Spring projects are often referred to simply as "Spring". 
+Demo application on Java Spring & Apache Kafka. Apache Kafka and Spring Boot will be used to establish communication between them.
 
-Spring provides everything required beyond the Java programming language for creating enterprise applications for a wide range of scenarios and architectures. Please read the [Overview](https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html#spring-introduction) section as reference for a more complete introduction.
+Code written while watching Udemy course: [Apache Kafka and Spring Boot](https://www.udemy.com/course/apache-kafka-and-spring-boot-consumer-producer/).
 
- version 2.0 of the [Apache License](https://www.apache.org/licenses/LICENSE-2.0).
+How to consume from an Apache Kafka topic and consume from it using a simple Spring Boot Application. 
+
+This project requires you to have basic experience with Maven, Spring Boot and Apache Kafka.
