@@ -19,10 +19,10 @@ public class KafkaController {
     }
 
     @PostMapping
-    public void post(@RequestBody String message){
+    public void post(@RequestBody MessageModel message){
 
         try{
-            System.out.println(message);
+            System.out.println(message.getClass() + message.toString());
             String convertedJson = this.jsonConverter.toJson(message);
             System.out.println(convertedJson);
             KafkaTemplate.send("myTopic", convertedJson);
@@ -38,7 +38,7 @@ public class KafkaController {
             System.out.println(messageString);
 
             MessageModel messageModel = (MessageModel) jsonConverter.fromJson(messageString, MessageModel.class);
-            System.out.println(messageModel.toString());
+            System.out.println("Fetched from Kafka:"  + messageModel.toString());
 
         } catch(Exception ex){
             System.out.println("Exception at Listener : " + ex.toString());
