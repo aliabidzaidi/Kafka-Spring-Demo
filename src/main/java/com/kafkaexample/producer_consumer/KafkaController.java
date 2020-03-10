@@ -29,7 +29,6 @@ public class KafkaController {
         } catch (Exception ex){
             System.out.println("Exception at Post : " + ex.toString());
         }
-
     }
 
     @KafkaListener(topics = "myTopic")
@@ -45,5 +44,4 @@ public class KafkaController {
         }
 
     }
-
 }
